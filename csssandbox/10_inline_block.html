@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block Stlying</title>
+  <style>
+    li{
+      display: inline;
+    }
+
+    li a{
+      padding-right: 20px;
+    }
+    /* img태그는 기본적으로 inline 그렇기 때문에 중앙정렬을 위해 block으로 변경 후 margin: auto */
+    img{
+      display: block;
+      margin: auto;
+    }
+
+    /* inline일댄 width랑 margin ingenored된다. 그래서 inline-block을써라. inline-block은 두개 속성 합한거 */
+    .box{
+      width: 32.8%;
+      display: inline-block;
+      box-sizing: border-box;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+
+  <br><br>
+  <img src="./img/leaf.png" alt="My Image">
+
+  <br><br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officiis. Ratione ab voluptatem odit ut vero at unde, incidunt quo!</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officiis. Ratione ab voluptatem odit ut vero at unde, incidunt quo!</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officiis. Ratione ab voluptatem odit ut vero at unde, incidunt quo!</p>
+  </div>
+</body>
+</html>
